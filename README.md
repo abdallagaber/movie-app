@@ -1,8 +1,12 @@
-
-
 # Movie App
 
 The Movie App is a web application built with Node.js, Express.js, EJS, and MongoDB. It allows users to list movies, add new movies, edit existing movies, delete movies, and log every request to a log file using middleware.
+
+## Video
+Watch a video demonstration of the Movie App to see its features in action:
+https://github.com/abdallagaber/movie-app/assets/48131968/b48a74d8-2392-4791-97d5-c08e689e673c
+
+
 
 ## Table of Contents
 
