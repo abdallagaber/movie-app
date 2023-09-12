@@ -4,6 +4,7 @@ The Movie App is a web application built with Node.js, Express.js, EJS, and Mong
 
 ## Video
 Watch a video demonstration of the Movie App to see its features in action:
+
 https://github.com/abdallagaber/movie-app/assets/48131968/b48a74d8-2392-4791-97d5-c08e689e673c
 
 
