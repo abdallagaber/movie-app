@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, serif;
+}
+
+.container {
+    position: absolute;
+    width: 690px;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.option {
+    display: inline-block;
+    width: 225px;
+}
+
+.block {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.title, .genre, .year, .rating {
+    margin-bottom: 20px;
+}
+
+.year, .rating {
+    width: 300px;
+}
+
+.besides {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: #2196f3ff;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

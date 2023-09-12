@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<div class="dashboard">
+    <div class="table-header">
+        <h1>Movie List</h1>
+        <a class="add-movie" href="/add">Add New Movie</a>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Year</th>
+                <th>Rating</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        <% movies.forEach((movie) => { %>
+            <tr>
+                <td><%= movie.title %></td>
+                <td><%= movie.genre.join(', ') %></td>
+                <td class="center"><%= movie.year %></td>
+                <td class="center"><%= movie.rating %></td>
+                <td>
+                    <div class="action">
+                    <form action="/edit/<%= movie._id %>?_method=GET" method="POST">
+                        <button class="edit-button" type="submit">Edit</button>
+                    </form>
+                    <form action="/<%= movie._id %>?_method=DELETE" method="POST">
+                        <button class="delete-button" type="submit">Delete</button>
+                    </form>
+                    </div>
+                </td>
+            </tr>
+        <% }); %>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
